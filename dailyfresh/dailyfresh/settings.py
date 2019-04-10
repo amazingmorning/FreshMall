@@ -86,10 +86,10 @@ WSGI_APPLICATION = 'dailyfresh.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'dailyfresh_bj18',
+        'NAME': 'dailyfresh_Djangao',
         'USER': 'root',
-        'PASSWORD': 'root',
-        'HOST': '172.16.179.142',
+        'PASSWORD': 'Python2019.',
+        'HOST': '127.0.0.1',
         'PORT':3306,
     }
 }
@@ -143,7 +143,7 @@ EMAIL_FROM = '天天生鲜<smartli_it@163.com>'
 CACHES = {
     "default": {
         "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://172.16.179.142:6379/9",
+        "LOCATION": "redis://127.0.0.1:6379/9",
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
         }
@@ -171,7 +171,7 @@ HAYSTACK_CONNECTIONS = {
     'default': {
         # 使用whoosh引擎
         # 'ENGINE': 'haystack.backends.whoosh_backend.WhooshEngine',
-        'ENGINE': 'haystack.backends.whoosh_cn_backend.WhooshEngine',
+        'ENGINE': 'haystack.backends.whoosh_backend.WhooshEngine',
         # 索引文件路径
         'PATH': os.path.join(BASE_DIR, 'whoosh_index'),
     }

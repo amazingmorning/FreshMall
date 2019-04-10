@@ -1,3 +1,4 @@
+# -*- coding: UTF-8 -*- 
 from django.contrib import admin
 from django.core.cache import cache
 from goods.models import GoodsType,IndexPromotionBanner,IndexGoodsBanner,IndexTypeGoodsBanner

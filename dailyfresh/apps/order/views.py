@@ -1,3 +1,4 @@
+# -*- coding: UTF-8 -*- 
 from django.shortcuts import render, redirect
 from django.core.urlresolvers import reverse
 from django.http import JsonResponse
@@ -8,7 +9,6 @@ from django.views.generic import View
 from user.models import Address
 from goods.models import GoodsSKU
 from order.models import OrderInfo, OrderGoods
-
 from django_redis import get_redis_connection
 from utils.mixin import LoginRequiredMixin
 from datetime import datetime
